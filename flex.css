@@ -1,0 +1,75 @@
+body {
+    box-sizing: content-box;
+}
+
+title {
+    justify-content: center;
+}
+
+.nav-list {
+    background-color: orangered;
+    justify-content: center;
+    display:flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+
+}
+.nav {
+    display: flex;
+    list-style-type: none;
+    
+    
+}
+
+.nav li {
+    margin-right: 10px;
+    border: 1px solid red;
+    
+}
+
+{
+    background-color: brown;
+    border: 2px solid green;
+}
+
+.container {
+    display:flex;
+    flex-wrap: wrap;
+    background-color:red;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+img {
+    width: 150px;
+}
+
+.animal {
+    flex-basis: 10%;
+    display: flex;
+    
+}
+
+.animal-dog {
+    border: 5px solid blue;
+    flex-basis: 20%;
+    flex-direction: row;
+    
+    background-color: white; 
+}
+.bottom {
+    background-color: purple;
+    border: 5px solid lime;
+}
+h1 {
+    background-color: blue;
+    color: yellow;
+}
+
+.best {
+    background-color: blue;
+    font-size: 28px;
+}
+
+
+
