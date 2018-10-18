@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.list {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+
+.list2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
