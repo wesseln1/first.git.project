@@ -1,6 +1,6 @@
 const journalEntries = [
     {
-        date: "07/24/2018",
+        date: "10/22/2018",
         concept: "Array methods",
         entry: "We learned about 4 different array methods today. forEach made sense, but the others still confuse me.",
         mood: "Ok",
@@ -26,17 +26,23 @@ const journalEntries = [
     Purpose: To create, and return, a string template that
     represents a single journal entry object as HTML
 
-    Arguments: journalEntry (object)
-*/
-const makeJournalEntryComponent = (journalEntry) => {
+    Arguments: journalEntry (object) */
+let journalEntry = journalEntries
+const makeJournalEntryComponent = function(journalEntry) {
+    const createEntry =
+    `<p>${journalEntry.date}</p>
+     <p>${journalEntry.concept}</p>
+     <p>${journalEntry.entry}</p>
+     <p>${journalEntry.mood}</p>`
     // Create your own HTML structure for a journal entry
-    journalEntry += journalEntries 
-    return `<h1 class="${journalEntry}"></h1>`
+return createEntry
 }
+const container = document.querySelector(".journal_entry");
 
-const h1 = (title, style) => {
-    return `<h1 class="${style}">${title}</h1>`
-}
 
-const container = document.querySelector(".journal_entry")
-container.innerHTML = makeJournalEntryComponent(journalEntries[1]);
+// const h1 = (title, style) => {
+//     return `<h1 class="${style}">${journalEntry}</h1>`
+// }
+
+console.log(makeJournalEntryComponent(journalEntry[1]));
+container.innerHTML = makeJournalEntryComponent(journalEntry[1])
